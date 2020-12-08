@@ -15,6 +15,7 @@ $(document).ready(function () {
                 var $this = $(this);
                 if (this.checked) {
                     $this.parent().addClass("completed");
+                     $(".edit").attr("disabled",true);
                 } else {
                     $this.parent().removeClass("completed");
                 }
