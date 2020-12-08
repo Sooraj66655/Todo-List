@@ -18,6 +18,7 @@ $(document).ready(function () {
                      $(".edit").attr("disabled",true);
                 } else {
                     $this.parent().removeClass("completed");
+                     $(".edit").attr("disabled",false);
                 }
             });
 
