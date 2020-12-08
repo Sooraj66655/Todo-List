@@ -1,0 +1,122 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    height: 100%;
+    background-color: #3b4d0a;
+    box-sizing: border-box;
+}
+header {
+    width: 100%;
+    height: auto;
+    padding-bottom: 2%;
+    padding-top: 2%;
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+    background-color: black;
+    color: red;
+}
+.logo {
+    background-image: url("cedcoss-logo.png");
+    height: 50px;
+    width: 150px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+i {
+    font-size: 36px !important;
+}
+.inputDiv {
+    margin-top: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.todo {
+    padding: 0.5rem 1rem;
+    outline: none;
+    border: none;
+    height: 50px;
+    background: transparent !important;
+    width: 350px;
+    margin: 0.25rem;
+    transition: 0.5s;
+    font-size: 1.5rem;
+    color: white !important;
+    border-bottom: 3px solid black !important;
+}
+
+.task {
+    text-align: center;
+    width: 100%;
+}
+#btn {
+    outline: none;
+    border: none;
+    height: 50px;
+    border-radius: 25px;
+    width: 50px;
+    background-color: #000000;
+    cursor: pointer;
+    color: white !important;
+    transition: 0.5s;
+    margin: 0.25rem;
+}
+#btn:hover {
+    opacity: 0.7;
+}
+
+.edit {
+    background: none;
+    outline: none;
+    border: none;
+    color: white;
+    font-size: 1.4rem;
+    font-family: "Hind", sans-serif;
+    margin: 0 0.5rem;
+    cursor: pointer;
+}
+.removeData {
+    background: none;
+    outline: none;
+    border: none;
+    color: #e00;
+    font-size: 1.4rem;
+    font-family: "Hind", sans-serif;
+    cursor: pointer;
+}
+.edit:hover {
+    opacity: 0.7;
+}
+.removeData:hover {
+    opacity: 0.7;
+}
+h3 {
+    text-decoration: underline;
+    font-size: 60px !important;
+    text-shadow: 2px 2px #000000;
+    margin-top: 5%;
+}
+ul {
+    text-align-last: left;
+    list-style-type: none;
+}
+li {
+    list-style-type: none;
+    font-size: 35px;
+    color: #080242;
+    margin-right: 40px;
+    font-weight: bold;
+    border-bottom: 3px solid black !important;
+    
+}
+.check {
+    zoom: 1.5;
+}
+.completed {
+    text-decoration: line-through;
+}
