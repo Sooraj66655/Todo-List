@@ -5,7 +5,7 @@ $(document).ready(function () {
             var todo = $(".todo").val();
             $(".todo").val("");
             var newLi =
-                "<li><input class='check' type='checkbox'><span>&nbsp;&nbsp;&nbsp;" +
+                "<li><input class='check' type='checkbox'>&nbsp;&nbsp;&nbsp;<span>" +
                 todo +
                 "</span>&nbsp;<button class='edit'><i class='fa fa-pencil' aria-hidden='true'></i></button>&nbsp;<button class='removeData'><i class='fa fa-trash-o' aria-hidden='true'></i></button></li>";
             $(".task ul").prepend(newLi);
@@ -27,7 +27,10 @@ $(document).ready(function () {
 
             /**********************************Edit Function***************************************/
             $(".edit").click(function () {
-                $(this).closest("li").find("span").prop("contenteditable", true).focus();
+                $(this).find("i").toggleClass("fa fa-pencil fa fa-floppy-o");
+                var $EDIT = $(this).parent().find("span"),
+                    isEditable = $EDIT.is(".editable");
+                $(this).parent().find("span").prop("contenteditable", !isEditable).toggleClass("editable").focus();
             });
         } else {
             alert("Please Enter a Task.....");
