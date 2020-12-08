@@ -109,10 +109,9 @@ li {
     list-style-type: none;
     font-size: 35px;
     color: #080242;
-    margin-right: 40px;
     font-weight: bold;
     border-bottom: 3px solid black !important;
-    
+
 }
 .check {
     zoom: 1.5;
@@ -120,3 +119,4 @@ li {
 .completed {
     text-decoration: line-through;
 }
+.editable{ background:#EAEAEA}
